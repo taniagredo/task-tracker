@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="neon">
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Task Tracker</h1>
+            <div class="settings">
+                <button id="theme-toggle">🎨</button>
+                <button id="language-toggle">🌎</button>
+            </div>
+        </header>
+
+        <div class="task-input">
+            <input type="text" id="new-task" placeholder="Añadir nueva tarea...">
+            <button id="add-task">Agregar</button>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="pending">Pendientes</button>
+            <button class="filter" data-filter="completed">Completadas</button>
+        </div>
+
+        <ul id="task-list"></ul>
+
+        <div id="notification" class="notification"></div>
+    </div>
+</body>
+</html>
